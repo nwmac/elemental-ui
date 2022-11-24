@@ -6,8 +6,8 @@
     "node": ">=12"
   },
   "dependencies": {
-    "@rancher/components": "0.1.0-alpha.5",
-    "@rancher/shell": "^0.2.5",
+    "@rancher/components": "0.1.0-alpha.9",
+    "@rancher/shell": "0.2.9",
     "@types/lodash": "4.14.184",
     "core-js": "3.21.1",
     "css-loader": "4.3.0"
@@ -20,5 +20,8 @@
     "mem-dev": "node --max-old-space-size=8192 ./node_modules/.bin/nuxt dev",
     "build-pkg": "./node_modules/@rancher/shell/scripts/build-pkg.sh",
     "serve-pkgs": "./node_modules/@rancher/shell/scripts/serve-pkgs"
+  },
+  "resolutions": {
+    "**/webpack": "4"
   }
 }
